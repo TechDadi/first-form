@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+   <main>
+    <h1>Contact Us</h1>
+    
+    <form id="contactForm">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Email">
+
+       
+        <label><input type="radio" name="queryType" value="general"> General Enquiry</label>
+        <label><input type="radio" name="queryType" value="support"> Support Request</label>
+      </div>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="consent" name="consent">
+        <label for="consent">I consent to being contacted by the team</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon!
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Dapo Kolawole</a>.
+  </div>
+</body>
+</html>
