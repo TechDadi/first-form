@@ -11,6 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    .box{
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Karla', sans-serif;
       background: hsl(148, 38%, 91%);
@@ -71,12 +74,11 @@
     .form {
       display: flex;
       gap: 20px;
-      flex-wrap: wrap;
     }
 
     .form-group {
       flex: 1;
-      min-width: 200px;
+    
     }
 
     .radio-group {
@@ -136,9 +138,6 @@
     @media (max-width: 600px) {
       .container {
         padding: 20px;
-      }
-      input, textarea, button {
-        font-size: 14px;
       }
       .form {
         flex-direction: column;
