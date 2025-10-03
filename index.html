@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    .box{
+    *{
       box-sizing: border-box;
     }
     body {
@@ -73,25 +73,27 @@
 
     .form {
       display: flex;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 4px;
     }
 
     .form-group {
-      flex: 1;
+      width: 50%;
     
     }
 
     .radio-group {
       display: flex;
-      gap: 15px;
       margin-bottom: 15px;
+      gap: 4px;
+
     }
 
-    .groups, .groupss {
-      flex: 1;
+    .groups {
       border: 1px solid hsl(186, 15%, 59%);
       border-radius: 7px;
       padding: 8px;
+      width: 50%;
     }
 
     .checkbox-group {
@@ -139,8 +141,11 @@
       .container {
         padding: 20px;
       }
-      .form {
+      .form,.radio-group {
         flex-direction: column;
+      }
+      .form-group,.groups{
+        width: 100%;
       }
     }
   </style>
@@ -174,7 +179,7 @@
             General Enquiry
           </label>
         </div>
-        <div class="groupss">
+        <div class="groups">
           <label>
             <input type="radio" name="queryType" value="support">
             Support Request
